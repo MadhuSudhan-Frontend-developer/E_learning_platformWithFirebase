@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Course Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 20px;
+    }
+    .course-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="mb-4 text-center">Web Development Course</h1>
+    <img src="./pics/website-development-banner_33099-1687.avif" alt="Web Development" class="course-image">
+    
+    <h2>Course Overview</h2>
+    <p>Learn how to build websites and web applications from scratch. This comprehensive course covers HTML, CSS, JavaScript, React, and Node.js.</p>
+    
+    <h2>What You'll Learn</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+    </ul>
+
+
+    <div class="container mt-4">
+      <h2>Course Content</h2>
+      <div class="accordion" id="courseAccordion">
+          <!-- Introduction to Web Development -->
+          <div class="card">
+              <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                      <button class="btn " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Introduction to Web Development
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#courseAccordion">
+                  <div class="card-body content">
+                      <h3>Introduction to Web Development</h3>
+                      <p>Web development refers to the process of building, creating, and maintaining websites. It involves several aspects including web design, web content creation, client-side/server-side scripting, and network security configuration.</p>
+
+                    </div>
+                </div>
+          <!-- HTML Fundamentals -->
+          <div class="card">
+              <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                      <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                          HTML Fundamentals
+                      </button>
+                  </h2>
+              </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#courseAccordion">
+  <div class="card-body content">
+    <h4><strong>1. Introduction to HTML</strong></h4>
+    <ul>
+      <li><strong>Syllabus:</strong>
+        <ul>
+          <li>What is HTML?</li>
+          <li>History and Evolution of HTML</li>
+          <li>Setting up an HTML Document (DOCTYPE, HTML Tags)</li>
+          <li>Basic Tags: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>, <code>&lt;body&gt;</code></li>
+          <li>Comments in HTML (<code>&lt;!-- --&gt;</code>)</li>
+          <li>Text Formatting Tags: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;u&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;small&gt;</code>, <code>&lt;mark&gt;</code></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4><strong>2. HTML Document Structure</strong></h4>
+    <ul>
+      <li><strong>Syllabus:</strong>
+        <ul>
+          <li>HTML Document Structure (Head, Body)</li>
+          <li>Meta Tags: <code>&lt;meta charset="UTF-8"&gt;</code>, <code>&lt;meta name="description"&gt;</code></li>
+          <li>Linking External Resources: CSS (<code>&lt;link&gt;</code>), JavaScript (<code>&lt;script&gt;</code>)</li>
+          <li>Basic HTML Page Layout: <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4><strong>3. HTML Links and Images</strong></h4>
+    <ul>
+      <li><strong>Syllabus:</strong>
+        <ul>
+          <li>Creating Links (<code>&lt;a&gt;</code>): Absolute vs. Relative URLs, Target Attribute</li>
+          <li>Image Embedding (<code>&lt;img&gt;</code>): Source, Alt Text, Width, and Height Attributes</li>
+          <li>Image Formats (JPEG, PNG, GIF, SVG)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4><strong>4. HTML Lists and Tables</strong></h4>
+    <ul>
+      <li><strong>Syllabus:</strong>
+        <ul>
+          <li>Ordered and Unordered Lists: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></li>
+          <li>Nesting Lists</li>
+          <li>Creating Tables: <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code></li>
+          <li>Table Attributes: <code>border</code>, <code>cellpadding</code>, <code>cellspacing</code>, <code>colspan</code>, <code>rowspan</code></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4><strong>5. HTML Forms and Input Elements</strong></h4>
+    <ul>
+      <li><strong>Syllabus:</strong>
+        <ul>
+          <li>Creating Forms: <code>&lt;form&gt;</code> tag, Action, Method (GET, POST)</li>
+          <li>Input Types: Text, Password, Submit, Reset, Radio, Checkbox, File, Hidden, etc.</li>
+          <li>Labels, Fieldsets, and Legends (<code>&lt;label&gt;</code>, <code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code>)</li>
+          <li>Form Validation Attributes: <code>required</code>, <code>pattern</code>, <code>min</code>, <code>max</code></li>
+          <li>Handling Forms with HTML5</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4><strong>6. HTML5 Semantic Elements</strong></h4>
+    <ul>
+      <li><strong>Syllabus:</strong>
+        <ul>
+          <li>Introduction to HTML5 Semantic Elements</li>
+          <li>Semantic Elements: <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;main&gt;</code></li>
+          <li>Advantages of Using Semantic Elements</li>
+          <li>HTML5 Audio and Video: <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;source&gt;</code>; Attributes: <code>controls</code>, <code>autoplay</code>, <code>loop</code>, <code>muted</code></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4><strong>7. Advanced HTML: Forms and APIs</strong></h4>
+    <ul>
+      <li><strong>Syllabus:</strong>
+        <ul>
+          <li>HTML5 Forms and Input Types (Date, Color, Range, Email, URL, Number)</li>
+          <li>Using HTML5 Data Attributes (<code>data-*</code>)</li>
+          <li>Integration with APIs (Form Submission to RESTful APIs)</li>
+          <li>Custom Data Validation with JavaScript</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4><strong>8. Responsive Web Design with HTML</strong></h4>
+    <ul>
+      <li><strong>Syllabus:</strong>
+        <ul>
+          <li>Introduction to Responsive Web Design</li>
+          <li>Viewport Meta Tag</li>
+          <li>Media Queries</li>
+          <li>Responsive Images: <code>&lt;picture&gt;</code> tag, <code>srcset</code> attribute</li>
+          <li>Mobile-First Design</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+                                   
+                                   
+<br>
+
+
+<h4><strong>2. HTML Document Structure</strong></h4><h5><strong>Syllabus:</strong></h5><h5><ol><li><p><strong>HTML Document Structure (Head, Body)</strong></p><ul><li><p><strong>Understanding the Basic Structure:</strong></p><ul><li>Every HTML document has a basic structure that includes the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> sections, wrapped inside the <code>&lt;html&gt;</code> tag.</li><li>The <code>&lt;head&gt;</code> section contains meta-information about the document, while the <code>&lt;body&gt;</code> section contains the content that is displayed on the webpage.</li></ul></li><li><p><strong>Tags Covered:</strong></p><ul><li><code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;title&gt;</code></li></ul></li><li><p><strong>Example:</strong></p><pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">html<div class="flex items-center"><br /></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My Webpage<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Welcome to My Webpage<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is an example of a basic HTML structure.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+    </code></div></div></pre></li></ul></li><li><p><strong>Meta Tags</strong></p><ul><li><strong>What Are Meta Tags?</strong><ul><li>Meta tags provide metadata about the HTML document, such as character encoding, description, keywords, and author.</li></ul></li><li><strong>Common Meta Tags:</strong><ul><li><code>&lt;meta charset="UTF-8"&gt;</code>: Specifies the character encoding for the document, ensuring proper display of characters.</li><li><code>&lt;meta name="description" content="This is a sample webpage."&gt;</code>: Provides a brief description of the webpage, often used by search engines.</li><li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>: Controls how the webpage is displayed on different devices, crucial for responsive design.</li></ul></li><li><strong>Example:</strong><pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">html<div class="flex items-center"><br /></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Learn the basics of HTML."</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>HTML Document Structure<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    </code></div></div></pre></li></ul></li><li><p><strong>Linking External Resources</strong></p><ul><li><p><strong>Linking CSS Files:</strong></p><ul><li>The <code>&lt;link&gt;</code> tag is used to link external CSS files to style the HTML document.</li><li><strong>Attributes:</strong><ul><li><code>rel="stylesheet"</code>: Specifies the relationship between the document and the linked file.</li><li><code>href="styles.css"</code>: Specifies the path to the CSS file.</li></ul></li><li><strong>Example:</strong><pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">html<div class="flex items-center"><br /></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"styles.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    </code></div></div></pre></li></ul></li><li><p><strong>Linking JavaScript Files:</strong></p><ul><li>The <code>&lt;script&gt;</code> tag is used to link external JavaScript files to add interactivity to the webpage.</li><li><strong>Attributes:</strong><ul><li><code>src="script.js"</code>: Specifies the path to the JavaScript file.</li><li><code>defer</code>: Ensures the script is executed after the HTML document is fully parsed.</li></ul></li><li><strong>Example:</strong><pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">html<div class="flex items-center"><br /></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"script.js"</span> <span class="hljs-attr">defer</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    </code></div></div></pre></li></ul></li></ul></li><li><p><strong>Basic HTML Page Layout</strong></p><ul><li><strong>Using Semantic Elements for Layout:</strong><ul><li>Semantic elements help structure the content of a webpage, making it more readable and accessible.</li><li><strong>Key Semantic Tags:</strong><ul><li><code>&lt;header&gt;</code>: Represents the introductory content or a group of navigational links.</li><li><code>&lt;footer&gt;</code>: Represents the footer of the document or a section, often containing copyright information or links.</li><li><code>&lt;nav&gt;</code>: Represents a section of the page that links to other pages or parts within the page.</li><li><code>&lt;section&gt;</code>: Represents a standalone section, typically with a heading.</li><li><code>&lt;article&gt;</code>: Represents a self-contained piece of content, such as a blog post or news article.</li></ul></li></ul></li><li><strong>Example:</strong><pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">html<div class="flex items-center"><br /></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>My Website<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#contact"</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+        
+        <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"home"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Welcome<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is the home section.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+        
+        <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"about"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>About Us<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Learn more about us in this section.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+        
+        <span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-symbol">&amp;copy;</span> 2024 My Website<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code></div></div></pre></li></ul></li></ol></h5>
+
+<br>
+<h3><strong>3. HTML Links and Images</strong></h3><h4><strong>Syllabus:</strong></h4><h5><ol><li><p><strong>Creating Links (<code>&lt;a&gt;</code> Tag)</strong></p><ul><li><p><strong>Purpose of Links:</strong></p><ul><li>Links, or hyperlinks, are essential elements that allow users to navigate between different pages on the web or jump to sections within a page.</li><li>The <code>&lt;a&gt;</code> tag is used to create these links, which can point to various destinations like websites, files, or email addresses.</li></ul></li><li><p><strong>Absolute vs. Relative URLs:</strong></p><ul><li><strong>Absolute URLs</strong>: These include the full web address (e.g., <code>https://www.example.com/page</code>) and are used when linking to external websites.</li><li><strong>Relative URLs</strong>: These are paths relative to the current document (e.g., <code>about.html</code>, <code>images/photo.jpg</code>). They are used for linking within the same website.</li><li><strong>Example:</strong><pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><br /></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-comment">&lt;!-- Absolute URL --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.example.com"</span>&gt;</span>Visit Example<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    
+    <span class="hljs-comment">&lt;!-- Relative URL --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"about.html"</span>&gt;</span>About Us<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    </code></div></div></pre></li></ul></li><li><p><strong>Target Attribute:</strong></p><ul><li>The <code>target</code> attribute defines how the link will be opened.<ul><li><code>target="_blank"</code>: Opens the link in a new tab or window.</li><li><code>target="_self"</code>: Opens the link in the same tab (default behavior).</li></ul></li><li><strong>Example:</strong><pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><br /></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.example.com"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>&gt;</span>Open Example in a New Tab<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    </code></div></div></pre></li></ul></li></ul></li><li><p><strong>Image Embedding (<code>&lt;img&gt;</code> Tag)</strong></p><ul><li><strong>Embedding Images:</strong></li><ul><li>The <code>&lt;img&gt;</code> tag is used to embed images in an HTML document. It is an empty tag, meaning it does not have a closing tag and is self-contained.</li><li><strong>Attributes:</strong></li><ul><li><code>src</code>: Specifies the path to the image file, which can be an absolute or relative URL.</li><li><code>alt</code>: Provides alternative text for the image, useful for accessibility and when the image fails to load.</li><li><code>width</code> and <code>height</code>: Control the display size of the image. Values can be in pixels (e.g., <code>width="300"</code>) or percentage (e.g., <code>width="50%"</code>).</li></ul></ul><li><br /></li><ul><li><strong>Example:</strong><pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><br /></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"images/logo.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Company Logo"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"100"</span>&gt;</span>
+    </code></div></div></pre></li></ul></ul></li><li><p><strong>Image Formats (JPEG, PNG, GIF, SVG)</strong></p><ul><li><strong>Understanding Image Formats:</strong><ul><li>Different image formats serve different purposes based on quality, size, and usage requirements:<ul><li><strong>JPEG (Joint Photographic Experts Group)</strong>: Best for photographs or images with many colors. Offers good quality with compression.</li><li><strong>PNG (Portable Network Graphics)</strong>: Supports transparency and is ideal for images with text, logos, or graphics where quality is paramount.</li><li><strong>GIF (Graphics Interchange Format)</strong>: Suitable for simple graphics and animations. Limited to 256 colors, making it less ideal for photos.</li><li><strong>SVG (Scalable Vector Graphics)</strong>: Used for vector images that scale without losing quality, perfect for logos and icons.</li></ul></li><li><strong>Examples of Usage:</strong><pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><br /></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-comment">&lt;!-- JPEG for a photo --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"images/photo.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Nature Photo"</span>&gt;</span>
+    
+    <span class="hljs-comment">&lt;!-- PNG for a logo with transparency --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"images/logo.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Transparent Logo"</span>&gt;</span>
+    
+    <span class="hljs-comment">&lt;!-- GIF for an animated image --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"images/animation.gif"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Loading Animation"</span>&gt;</span>
+    
+    <span class="hljs-comment">&lt;!-- SVG for a scalable icon --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"images/icon.svg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Scalable Icon"</span>&gt;</span></code></div></div></pre></li></ul></li></ul></li></ol></h5>
+
+
+    <br>
+
+   
+
+    <h4>4. HTML Lists and Tables</h4><h4><strong>Ordered and Unordered Lists</strong></h4><h5><ul><li><p><strong>Unordered Lists (<code>&lt;ul&gt;</code>):</strong></p><ul><li>Used to create a list of items where the order doesn’t matter.</li><li>Each item in the list is defined using the <code>&lt;li&gt;</code> tag.</li><li>Default bullet points are used for each list item.</li><li>Example:<pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">html<div class="flex items-center"><br /></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Item 3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      </code></div></div></pre></li></ul></li><li><p><strong>Ordered Lists (<code>&lt;ol&gt;</code>):</strong></p><ul><li>Used to create a list of items where the order does matter.</li><li>Each item is defined using the <code>&lt;li&gt;</code> tag.</li><li>Default numbering is used for each list item.</li><li>Example:<pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">html<div class="flex items-center"><br /></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>First item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Second item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Third item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+      </code></div></div></pre></li></ul></li></ul></h5><h4><strong>Nesting Lists</strong></h4><h5><ul><li>Lists can be nested inside other lists to create a hierarchical structure.</li><li>You can nest an unordered list inside an ordered list, or vice versa.</li><li>Example:<pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">html<div class="flex items-center"><br /></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Item 1
+          <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Sub-item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Sub-item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      </code></div></div></pre></li></ul></h5><h4><strong>Creating Tables</strong></h4><h5><p>Tables are used to organize data in rows and columns.</p><ul><li><strong>Table Structure:</strong><ul><li><p><code>&lt;table&gt;</code>: The container element for all table content.</p></li><li><p><code>&lt;tr&gt;</code>: Table row; used to define a row within the table.</p></li><li><p><code>&lt;td&gt;</code>: Table data cell; used to define the cells within a row.</p></li><li><p><code>&lt;th&gt;</code>: Table header cell; used for header cells that often appear at the top of a column.</p></li><li><p><code>&lt;thead&gt;</code>: Container for the table header; used to group the header content.</p></li><li><p><code>&lt;tbody&gt;</code>: Container for the table body; used to group the body content.</p></li><li><p><code>&lt;tfoot&gt;</code>: Container for the table footer; used to group footer content.</p></li><li><p>Example:</p><pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">html<div class="flex items-center"><br /></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Header 1<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Header 2<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Data 1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Data 2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Data 3<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Data 4<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tfoot</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Footer 1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Footer 2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tfoot</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+      </code></div></div></pre></li></ul></li></ul></h5><h5><strong>Table Attributes</strong></h5><h5><ul><li><p><strong><code>border</code> Attribute:</strong></p><ul><li>Specifies whether the table should have borders.</li><li>Example: <code>&lt;table border="1"&gt;</code> adds borders around the table cells.</li></ul></li><li><p><strong><code>cellpadding</code> Attribute:</strong></p><ul><li>Specifies the space between the cell content and the cell borders.</li><li>Example: <code>&lt;table cellpadding="10"&gt;</code> increases the padding inside each cell.</li></ul></li><li><p><strong><code>cellspacing</code> Attribute:</strong></p><ul><li>Specifies the space between the cells in the table.</li><li>Example: <code>&lt;table cellspacing="5"&gt;</code> adds space between each cell.</li></ul></li><li><p><strong><code>colspan</code> Attribute:</strong></p><ul><li>Allows a cell to span across multiple columns.</li><li>Example: <code>&lt;td colspan="2"&gt;</code> makes the cell span across two columns.</li></ul></li><li><p><strong><code>rowspan</code> Attribute:</strong></p><ul><li>Allows a cell to span across multiple rows.</li><li>Example: <code>&lt;td rowspan="2"&gt;</code> makes the cell span across two rows.</li></ul></li></ul></h5>
+                </div>
+              </div>
+          </div>
+  
+          <!-- CSS for Styling -->
+          <div class="card">
+              <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          CSS for Styling
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#courseAccordion">
+                  <div class="card-body content">
+                      <h3>CSS for Styling</h3>
+                      <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It controls the visual presentation of HTML elements, such as colors, fonts, and spacing.</p>
+                      <pre>
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+  }
+  h1 {
+      color: #333;
+  }
+                      </pre>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- JavaScript Basics -->
+          <div class="card">
+              <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          JavaScript Basics
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#courseAccordion">
+                  <div class="card-body content">
+                      <h3>JavaScript Basics</h3>
+                      <p>JavaScript is a programming language that enables interactive web pages and is an essential part of web applications. It allows you to create dynamic content and control how a web page behaves.</p>
+                      <pre>
+  function greet(name) {
+      return 'Hello, ' + name;
+  }
+  console.log(greet('World'));
+                      </pre>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Advanced JavaScript -->
+          <div class="card">
+              <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          Advanced JavaScript
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#courseAccordion">
+                  <div class="card-body content">
+                      <h3>Advanced JavaScript</h3>
+                      <p>Advanced JavaScript concepts include closures, asynchronous programming, and JavaScript engines. Understanding these topics is crucial for writing efficient and high-performance JavaScript code.</p>
+                      <pre>
+  async function fetchData() {
+      let response = await fetch('https://api.example.com/data');
+      let data = await response.json();
+      console.log(data);
+  }
+  fetchData();
+                      </pre>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- React for Front-end Development -->
+          <div class="card">
+              <div class="card-header" id="headingSix">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          React for Front-end Development
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#courseAccordion">
+                  <div class="card-body content">
+                      <h3>React for Front-end Development</h3>
+                      <p>React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage the state of applications effectively.</p>
+                      <pre>
+  import React from 'react';
+  function App() {
+      return <h1>Hello, React!</h1>;
+  }
+  export default App;
+                      </pre>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Node.js for Back-end Development -->
+          <div class="card">
+              <div class="card-header" id="headingSeven">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          Node.js for Back-end Development
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#courseAccordion">
+                  <div class="card-body content">
+                      <h3>Node.js for Back-end Development</h3>
+                      <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to build scalable network applications and handle server-side operations.</p>
+                      <pre>
+  const http = require('http');
+  const server = http.createServer((req, res) => {
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'text/plain');
+      res.end('Hello, Node.js!\n');
+  });
+  server.listen(3000, () => {
+      console.log('Server running at http://localhost:3000/');
+  });
+                      </pre>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Building Full-stack Applications -->
+          <div class="card">
+              <div class="card-header" id="headingEight">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          Building Full-stack Applications
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#courseAccordion">
+                  <div class="card-body content">
+                      <h3>Building Full-stack Applications</h3>
+                      <p>Building full-stack applications involves integrating both front-end and back-end technologies. This includes using a front-end framework like React, and a back-end environment like Node.js, along with a database.</p>
+                      <pre>
+  const express = require('express');
+  const app = express();
+  app.get('/', (req, res) => {
+      res.send('Hello, Full-stack Application!');
+  });
+  app.listen(3000, () => {
+      console.log('Server running on port 3000');
+  });
+                      </pre>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>

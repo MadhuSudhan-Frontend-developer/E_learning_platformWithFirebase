@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Course Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 20px;
+    }
+    .course-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="mb-4 text-center">Project Management Course</h1>
+    <img src="./pics/PM.jpeg" alt="Project Management" class="course-image">
+    
+    <h2>Course Overview</h2>
+    <p>Understand the principles of managing projects successfully. This comprehensive course covers Agile, Scrum, project planning, risk management, and stakeholder communication.</p>
+    
+    <h2>What You'll Learn</h2>
+    <ul>
+      <li>Agile</li>
+      <li>Scrum</li>
+      <li>Project Planning</li>
+      <li>Risk Management</li>
+      <li>Stakeholder Communication</li>
+    </ul>
+
+    <h2>Course Content</h2>
+    <div class="accordion" id="courseAccordion">
+      <!-- Introduction to Project Management -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Introduction to Project Management
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>This section provides an overview of project management principles, including key concepts, methodologies, and the role of a project manager. You'll learn about the project lifecycle, stakeholder management, and the importance of communication in successful project delivery.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agile Methodologies -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Agile Methodologies
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Learn about Agile methodologies, including Scrum, Kanban, and Lean. This section covers the principles of Agile, its advantages, and how to implement Agile practices in project management.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scrum Framework -->
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Scrum Framework
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Explore the Scrum framework in detail, including roles, events, and artifacts. This section provides insights into Scrum practices and how they contribute to successful project outcomes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Planning Essentials -->
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Project Planning Essentials
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Understand the key elements of project planning, including scope definition, scheduling, budgeting, and resource allocation. This section covers best practices for creating a robust project plan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Risk Management Techniques -->
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Risk Management Techniques
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Learn how to identify, assess, and manage project risks. This section covers techniques for risk analysis, mitigation strategies, and how to address risks proactively.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Effective Stakeholder Communication -->
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Effective Stakeholder Communication
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Discover techniques for effective stakeholder communication, including strategies for engaging stakeholders, managing expectations, and ensuring clear and timely communication throughout the project lifecycle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <h2 class="mt-4">Instructors</h2>
+    <p>This course is taught by experienced project managers with years of industry experience.</p>
+    
+    <h2>Enroll Now</h2>
+    <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='enrollment-page.html'">Enroll Now</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

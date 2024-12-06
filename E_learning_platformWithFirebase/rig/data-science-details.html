@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science Course Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 20px;
+    }
+    .course-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="mb-4 text-center">Data Science Course</h1>
+    <img src="./pics/Datascience.avif" alt="Data Science" class="course-image">
+    
+    <h2>Course Overview</h2>
+    <p>Dive into data analysis and machine learning. This comprehensive course covers Python, R, data analysis, machine learning, and data visualization.</p>
+    
+    <h2>What You'll Learn</h2>
+    <ul>
+      <li>Python</li>
+      <li>R</li>
+      <li>Data Analysis</li>
+      <li>Machine Learning</li>
+      <li>Data Visualization</li>
+    </ul>
+
+    <h2>Course Content</h2>
+    <div class="accordion" id="courseAccordion">
+      <!-- Introduction to Data Science -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Introduction to Data Science
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Learn the basics of data science, including the different stages of a data science project, and the importance of data in decision-making.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Python for Data Science -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Python for Data Science
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Explore Python programming for data science, including libraries like Pandas, NumPy, and Matplotlib for data manipulation and visualization.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- R for Data Analysis -->
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              R for Data Analysis
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Understand how to use R for statistical analysis and data visualization, focusing on packages such as ggplot2 and dplyr.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistical Analysis -->
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Statistical Analysis
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Learn about various statistical techniques used in data science, including hypothesis testing, regression analysis, and statistical modeling.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Machine Learning Algorithms -->
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Machine Learning Algorithms
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Explore various machine learning algorithms, including supervised and unsupervised learning, and how to implement them using Python and R.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Visualization Techniques -->
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Data Visualization Techniques
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Learn techniques for effectively visualizing data using tools and libraries such as Matplotlib, Seaborn, and Tableau.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Big Data Technologies -->
+      <div class="card">
+        <div class="card-header" id="headingSeven">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Big Data Technologies
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Gain an understanding of big data technologies, including Hadoop and Spark, and how they are used to handle large datasets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="mt-4">Instructors</h2>
+    <p>This course is taught by experienced data scientists with years of industry experience.</p>
+    
+    <h2>Enroll Now</h2>
+    <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='enrollment-page.html'">Enroll Now</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 20px;
+    }
+    .card-deck .card {
+      min-width: 250px;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">E-Learning Platform</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 ml-auto" onsubmit="return searchCourse()">
+        <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search for a course" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      
+      <ul class="navbar-nav ml-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#profileModal">
+            <i class="fas fa-user-circle"></i> <!-- Profile Icon -->
+          </a>
+        </li>
+      </ul>
+
+
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="mb-4 text-center">Welcome to the Home Page</h1>
+    <p class="text-center">You are logged in!</p>
+    
+    <h2 class="mb-4">Courses</h2>
+    <div class="card-deck">
+      <div class="card">
+        <img src="./pics/website-development-banner_33099-1687.avif" class="card-img-top" alt="Web Development">
+        <div class="card-body">
+          <h5 class="card-title">Web Development</h5>
+          <p class="card-text">Learn how to build websites and web applications from scratch.</p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#webDevModal">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./pics/Datascience.avif" class="card-img-top" alt="Data Science">
+        <div class="card-body">
+          <h5 class="card-title">Data Science</h5>
+          <p class="card-text">Dive into data analysis and machine learning.</p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#dataScienceModal">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./pics/grapic-design.jpeg" class="card-img-top" alt="Graphic Design">
+        <div class="card-body">
+          <h5 class="card-title">Graphic Design</h5>
+          <p class="card-text">Master the art of visual communication.</p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#graphicDesignModal">Learn More</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card-deck mt-4">
+      <div class="card">
+        <img src="./pics/artificial-intelligence.avif" class="card-img-top" alt="Artificial Intelligence">
+        <div class="card-body">
+          <h5 class="card-title">Artificial Intelligence</h5>
+          <p class="card-text">Explore the future of AI and machine learning.</p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#aiModal">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./pics/digital-marketing.avif" class="card-img-top" alt="Digital Marketing">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <p class="card-text">Learn to create and implement effective digital marketing strategies.</p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#digitalMarketingModal">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./pics/PM.jpeg" class="card-img-top" alt="Project Management">
+        <div class="card-body">
+          <h5 class="card-title">Project Management</h5>
+          <p class="card-text">Understand the principles of managing projects successfully.</p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#projectManagementModal">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <!-- Web Development Modal -->
+  <div class="modal fade" id="webDevModal" tabindex="-1" aria-labelledby="webDevModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="webDevModalLabel">Web Development</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Learn how to build websites and web applications from scratch. This course covers HTML, CSS, JavaScript, and more.</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="window.location.href='web-development-details.html'">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Science Modal -->
+  <div class="modal fade" id="dataScienceModal" tabindex="-1" aria-labelledby="dataScienceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="dataScienceModalLabel">Data Science</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Dive into data analysis and machine learning. This course includes Python, R, and more.</p>
+          <ul>
+            <li>Python</li>
+            <li>R</li>
+            <li>Data Analysis</li>
+            <li>Machine Learning</li>
+            <li>Data Visualization</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="window.location.href='data-science-details.html'">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Graphic Design Modal -->
+  <div class="modal fade" id="graphicDesignModal" tabindex="-1" aria-labelledby="graphicDesignModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="graphicDesignModalLabel">Graphic Design</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Master the art of visual communication. This course covers Photoshop, Illustrator, and more.</p>
+          <ul>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>InDesign</li>
+            <li>Typography</li>
+            <li>Branding</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="window.location.href='graphic-design-details.html'">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Artificial Intelligence Modal -->
+  <div class="modal fade" id="aiModal" tabindex="-1" aria-labelledby="aiModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aiModalLabel">Artificial Intelligence</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Explore the future of AI and machine learning. This course includes neural networks, deep learning, and more.</p>
+          <ul>
+            <li>Neural Networks</li>
+            <li>Deep Learning</li>
+            <li>Natural Language Processing</li>
+            <li>Computer Vision</li>
+            <li>AI Ethics</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="window.location.href='ai-details.html'">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Digital Marketing Modal -->
+  <div class="modal fade" id="digitalMarketingModal" tabindex="-1" aria-labelledby="digitalMarketingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="digitalMarketingModalLabel">Digital Marketing</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Learn to create and implement effective digital marketing strategies. This course includes SEO, SEM, and more.</p>
+          <ul>
+            <li>SEO</li>
+            <li>SEM</li>
+            <li>Social Media Marketing</li>
+            <li>Email Marketing</li>
+            <li>Content Marketing</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="window.location.href='digital-marketing-details.html'">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Management Modal -->
+  <div class="modal fade" id="projectManagementModal" tabindex="-1" aria-labelledby="projectManagementModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectManagementModalLabel">Project Management</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Understand the principles of managing projects successfully. This course includes Agile, Scrum, and more.</p>
+          <ul>
+            <li>Agile</li>
+            <li>Scrum</li>
+            <li>Project Planning</li>
+            <li>Risk Management</li>
+            <li>Stakeholder Communication</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="window.location.href='project-management-details.html'">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Profile Modal -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel">Profile</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Email:</strong> <span id="profileEmail">Loading...</span></p>
+        <p><strong>Name:</strong> <span id="profileName">Loading...</span></p>
+        <p><strong>Details:</strong> <span id="profileDetails">Loading...</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script>
+   
+  </script> -->
+  
+  <!-- Add Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database-compat.js"></script>
+  
+  <!-- Initialize Firebase -->
+  <script src="./script.js"></script>
+
+
+</body>
+</html>

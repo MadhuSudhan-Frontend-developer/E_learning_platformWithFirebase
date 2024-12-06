@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphic Design Course Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 20px;
+    }
+    .course-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="mb-4 text-center">Graphic Design Course</h1>
+    <img src="./pics/grapic-design.jpeg" alt="Graphic Design" class="course-image">
+    
+    <h2>Course Overview</h2>
+    <p>Master the art of visual communication. This comprehensive course covers Photoshop, Illustrator, InDesign, typography, and branding.</p>
+    
+    <h2>What You'll Learn</h2>
+    <ul>
+      <li>Photoshop</li>
+      <li>Illustrator</li>
+      <li>InDesign</li>
+      <li>Typography</li>
+      <li>Branding</li>
+    </ul>
+
+    <h2>Course Content</h2>
+    <div class="accordion" id="courseAccordion">
+      <!-- Introduction to Graphic Design -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Introduction to Graphic Design
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Get introduced to the fundamentals of graphic design, including design principles, color theory, and the history of design.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photoshop Basics -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Photoshop Basics
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Learn the basics of Adobe Photoshop, including tools, techniques, and workflows for photo editing and graphic creation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Illustrator Techniques -->
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Illustrator Techniques
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Explore Adobe Illustrator techniques for vector graphics, including creating illustrations, logos, and complex shapes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- InDesign for Print Media -->
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              InDesign for Print Media
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Learn Adobe InDesign for creating print materials such as brochures, flyers, and magazines with advanced layout techniques.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typography Essentials -->
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Typography Essentials
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Understand the principles of typography, including font selection, layout, and the impact of type on visual communication.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Creating a Brand Identity -->
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Creating a Brand Identity
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#courseAccordion">
+          <div class="card-body">
+            <p>Learn how to develop a cohesive brand identity, including logo design, brand guidelines, and visual consistency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="mt-4">Instructors</h2>
+    <p>This course is taught by experienced graphic designers with years of industry experience.</p>
+    
+    <h2>Enroll Now</h2>
+    <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='enrollment-page.html'">Enroll Now</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
